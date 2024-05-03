@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1 id="titre">ECOLE NATIONALE DE L'INFORMATIQUE</h1><!-- Le titre -->
+    </header>
+    <nav class="topbar"><!-- la barre de navigation -->
+        <div class="topbar_container">
+            <ul class="topbar1">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#comment"><span></span>Commentaires</a></li>
+            </ul>
+            <ul class="topbar2">
+                <li><a href="#mission">Missions</a></li>
+                <li><a href="#object">objectifs</a></li>
+                <li><a href="#particular">Particularités</a></li>
+                <li><a href="#contact">contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main" style="width: 1008px; margin-left: auto; margin-right: auto;">
+        <div class="partie1">
+            <div>
+                <img src="images\about.png" alt="salle eni" class="maison1"><!-- image de salle de l'eni fianara -->
+            </div>
+            <div class="presentation">
+                <h2>Ecole Nationale de l'Informatique</h2>
+                <p>Ecole ingénieuse</p>
+                <p>Parcours fiable</p>
+                <p>Enseignement de qualité</p>
+                <img src="images\eni logo.png" alt="logo eni" width="150px" height="150px"><!-- image de logo de l'eni -->
+            </div>    
+        </div> 
+        <div class="partie2">
+            <div class="loc">
+                <h2>E.N.I se situe dans deux <br>Provinces à Madagascar</h2>
+                <p>
+                    <img src="images\loc1.svg" alt="fianara" width="30px" height="30px">
+                    <span>E.N.I Fianarantsoa</span>
+                </p>
+                <p>
+                    <img src="images\loc1.svg" alt="toliara" width="30px" height="30px">
+                    <span>E.N.I Toliara</span>
+                </p>
+            </div>
+            <div class="parcours">
+                <h2>Parcours existant</h2>
+                <p>
+                    <img src="images\link1.svg" alt="link" width="30px" height="30px">
+                    <a href="#">Génie logiciel et Base de données</a>
+                </p>
+                <p>
+                    <img src="images\link1.svg" alt="link" width="30px" height="30px">
+                    <a href="#">Administration Systèmes et Réseaux</a>
+                </p>
+                <p>
+                    <img src="images\link1.svg" alt="link" width="30px" height="30px">
+                    <a href="#">Informatique Générale (hybride)</a>
+                </p>
+            </div>
+        </div>
+        <div class="sections">
+            <section class="sec1" id="mission">
+                <h2>Missions</h2>
+                <p>
+                    Notre principale mission c'est de former les jeunes 
+                    pour <br>devenir des ingénieurs informatiques autonomes
+                    capable <br>de maîtriser des technologies informatiques.
+                </p>
+            </section>
+            <section class="sec2" id="object">
+                <h2>Objectifs</h2>
+                <p>
+                    Nous avons des objectifs spécifiques sutout pour les 
+                    jeunes. <br>Notamment, notre primordial objectif est de 
+                    réduire le taux <br>de chômage et de faire évoluer la 
+                    technologie à Madagascar.
+                </p>
+            </section>
+            <section class="sec3" id="particular">
+                <h2>Particularités</h2>
+                <p>
+                    Effectivement, les ingénieurs sortant de notre école
+                    sont <br>tous les meilleurs dans leur domaines de travail.
+                    Certains <br>entreprises mentionnent souvent que notre
+                    ingénieurs sont <br>des experts et professionnels.
+                </p>
+            </section>
+        </div>
+        <div class="side">
+            <aside id="contact">
+                <h2>Contacts</h2>
+                <p>
+                    Vous pouvez nous contacter pour avoir plus d'informations
+                </p>
+                <p>
+                    <img src="images\tel1.svg" alt="phone" width="30px" height="30px">
+                    <a href="#">+261 341512705</a>
+                </p>
+                <p>
+                    <img src="images\fb1.svg" alt="fb" width="30px" height="30px">
+                    <a href="#">ENI Ofisialy</a>
+                </p>
+                <p>
+                    <img src="images\email1.svg" alt="email" width="30px" height="30px">
+                    <a href="#">enifianarantsoa@gmail.com</a>
+                </p>
+                <p>
+                    <img src="images\link1.svg" alt="site" width="30px" height="30px">
+                    <a href="#">www.eni.mg</a>
+                </p>
+            </aside>
+            <form action="" method="post" id="comment">
+                <div class="tab">
+                    <table>
+                        <tr>
+                            <td>Prénom</td>
+                            <td class="formu1"><input type="text" name="prenom" id="prenom"></td>
+                        </tr>
+                        <tr>
+                            <td>e-mail</td>
+                            <td class="formu1"><input type="email" name="mail" id="mail"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="formu1"><textarea name="comment" id="comment" cols="28" rows="5" placeholder="Taper ici votre commentaires"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="subm"><input type="submit" name="Envoi" id="Envoi" value="Envoyer"></td>
+                            <td class="sub"><input type="reset" name="annul" id="annul" value="Annuler"></td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div> 
+        <button>
+            <a href="#">Retour en haut</a>
+        </button> 
+    </div>
+    <footer class="foot" style="width: 1008px; margin-left: auto; margin-right: auto;">
+        <hr>
+        <p>&copy;2024, PORTFOLIO ENI FIANARANTSOA</p>
+    </footer>
+</body>
+</html>

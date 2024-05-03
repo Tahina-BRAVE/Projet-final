@@ -1,0 +1,212 @@
+.maison1{/* Pour la salle de l'eni fianara */
+    border:ridge #212529;
+    margin-top: 8px;
+    width: 430px;
+    height: 300px;
+}
+.partie1{
+    display: flex;
+    justify-content: space-between;
+}
+.presentation h2{
+    color: #0fc295;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-wrap: wrap;
+}
+.presentation p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.sections{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sec1, .sec2{
+    margin-right: 8px;
+}
+.sec1 h2, .sec2 h2, .sec3 h2{
+    text-align: center;
+    color: #fff;
+}
+.sec1 p, .sec2 p, .sec3 p{
+    font-size: 22px;
+    text-align: center;
+}
+.sec1, .sec2, .sec3{
+    border-radius: 20px;
+    padding: 8px;
+    border: ridge #212529;
+    background-color: #0fc295;
+}
+.partie2{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    margin-left: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.partie2 h2{
+    color: #0fc295;
+}
+.loc span{
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+    bottom:5px;
+}
+.loc img{
+    margin-right: 8px;
+}
+.parcours a{
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: none;
+    position: relative;
+    bottom: 8px;
+    color: #212529;
+}
+.side{
+    display: flex;
+    justify-content: space-between;
+}
+aside{/* Pour le le contact */
+    border: ridge #212529;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+aside p{
+    font-size: 20px;
+}
+aside h2{
+    color: #0fc295;
+}
+aside a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color .3s;
+    position: relative;
+    bottom: 5px;
+}
+aside a:hover{
+    color: #0fc295;
+    transition: color .3s;
+}
+aside img{
+    margin-right: 10px;
+}
+footer{
+    text-align: center;
+}
+form{
+    border: ridge #212529;
+    border-radius: 20px;
+    padding: 30px;
+    padding-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: inline-flex;
+    background-color: rgb(217, 223, 222);
+}
+table td{
+    justify-content: space-between;
+    font-size: 20px;
+}
+.formu1 input{ 
+    padding: 8px;
+    margin: 10px;
+    padding-right: 50px;
+    padding-left: 30px;
+    margin-left: 10px;
+    border-color: #212529;
+    border-radius: 5px;
+}
+.formu1 textarea{/* Pour la barre de commentaires */
+    margin-left: 10px;
+    padding-left: 30px;
+    border-color: #212529;
+    border-radius: 5px;
+}
+.subm input{/* Pour le bouton submit */
+    margin-top: 20px;
+    padding: 5px;
+    margin-bottom: 0;
+    background-color: #0fc295;
+    border-radius: 5px;
+    color: white;
+}
+.sub input{/* Pour le bouton reset */
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 5px;
+    margin-bottom: 0;
+    background-color: #212529;
+    color: white;
+    border-radius: 5px;
+}
+button{
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #212529;
+    border-radius: 5px;
+    position: relative;
+    left: 450px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    transition: color .3s;
+}
+button a:hover{
+    color: #0fc295;
+}
+@media only screen and (max-width:1024px){/* Pour la grande taille */
+    .main{
+        width:100%;
+    }
+}
+/* Pour les écrans de taille moyenne */
+@media only screen and (max-width: 768px) {
+    .partie2 {
+        flex-direction: column; /* Réorganiser les éléments en colonne */
+        margin: 20px; /* Ajuster la marge */
+    }
+    .maison1 {
+        width: 100%; /* Ajuster la largeur de l'image */
+        max-width: 100%;
+        height: auto;
+    }
+    .partie1{
+        display: block;
+        margin: 20px;
+    }
+}
+
+/* Pour les petits écrans */
+@media only screen and (max-width: 480px) {
+    .presentation h2 {
+        font-size: 1.5em; /* Ajuster la taille du titre */
+    }
+    .maison1 {
+        width: 100%; /* Ajuster la largeur de l'image */
+        max-width: 100%;
+        height: auto;
+    }
+    .formu1 input, .formu1 textarea {
+        width: 90%; /* Ajuster la largeur des champs de saisie */
+    }
+    .subm input, .sub input {
+        width: 45%; /* Ajuster la largeur des boutons */
+    }
+    button {
+        margin-left: auto; /* Centrer le bouton */
+        margin-right: auto;
+    }
+}
